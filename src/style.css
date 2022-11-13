@@ -33,18 +33,6 @@
   padding-left: 10px;
 }
 
-a {
-  color: #ffffff;
-  text-decoration: none;
-  background-color: transparent;
-}
-
-a:hover {
-  color: #ffffff;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
 .insky {
   margin-bottom: 0;
   font-size: 20px;
@@ -127,3 +115,30 @@ button {
 button:hover {
   cursor: auto;
 }
+footer {
+  font-size: small;
+  text-align: center;
+  margin-left: 18px;
+}
+
+a {
+  color: #000000;
+  background-color: transparent;
+}
+
+a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+/* a {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: underline; */
+/* } */
