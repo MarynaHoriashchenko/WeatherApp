@@ -1,0 +1,129 @@
+.wholepage {
+  border: 1px black solid;
+  width: 900px;
+  background-color: black;
+  color: white;
+  font-family: "Josefin Slab", serif;
+}
+
+.allApp {
+  padding-top: 20px;
+}
+
+.WTblock {
+  margin-bottom: 0;
+}
+
+.sun_emoji {
+  width: 200px;
+  float: left;
+}
+
+.weather-today {
+  padding-left: 25px;
+}
+
+.degree {
+  font-size: 80px;
+  font-weight: 700;
+}
+.units {
+  position: relative;
+  top: -42px;
+  padding-left: 10px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.insky {
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.feelslike {
+  font-size: small;
+}
+
+.cityblock {
+  margin-left: 40px;
+}
+
+.search-city {
+  border-radius: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.choise-city,
+.currentData {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.card {
+  background-color: black;
+}
+
+.dot {
+  height: 80px;
+  width: 80px;
+  background-color: black;
+  border-radius: 50%;
+  border-style: solid;
+  display: inline-block;
+}
+
+.dot2 {
+  height: 80px;
+  width: 80px;
+  background-color: black;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 5px;
+  display: inline-block;
+  font-weight: 900;
+}
+
+.card-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.week {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+button {
+  background-image: url("https://i.pinimg.com/564x/9d/ec/f9/9decf96b4e45cbac0f7de16222e968f8.jpg");
+  background-size: 40px;
+  width: 40px;
+  height: 40px;
+  font-size: 2rem;
+  border-radius: 40px;
+  position: absolute;
+  bottom: 603px;
+  left: 910px;
+}
+
+button:hover {
+  cursor: auto;
+}
