@@ -119,9 +119,9 @@ button {
   height: 40px;
   font-size: 2rem;
   border-radius: 40px;
-  position: absolute;
-  bottom: 603px;
-  left: 910px;
+  position: relative;
+  right: 50px;
+  top: -60px;
 }
 
 button:hover {
