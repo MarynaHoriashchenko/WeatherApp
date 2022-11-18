@@ -20,36 +20,36 @@
   </head>
   <body>
     <div class="container">
-    <div class="container wholepage">
-      <div class="row allApp">
-        <div class="col-6">
-          <p class="WTblock">
+      <div class="container wholepage">
+        <div class="row allApp">
+          <div class="col-6">
             <img src="emoji/14.2.png" alt="sun" class="sun_emoji" />
-            <span class="weather-today degree" id="temperatureToday">17°C</span>
+            
             <!-- <span class="units">
-                  <a href="#" id="celsius-link">°C</a> |
-                  <a href="#" id="fahrenheit-link">°F</a>
+              <a href="#" id="celsius-link">°C</a> |
+              <a href="#" id="fahrenheit-link">°F</a>
             </span> -->
-            <p>
-              <span class="weather-today insky" id="inTheSky"> Sunny </span> <br />
-              <span class="weather-today feelslike" id="tempFeelsLike">Feels like 1 °C</span>
-           
-            </p>
-          </p>
-        </div>
-        <div class="col-5 cityblock" >
-           <form id="changeInfoCity">
-          <input
-            type="text" 
-            placeholder="Type your sity here"
-            class="search-city"
-            id = "searchInputValues"
-           />   
-           </form>
-            <button id="hereButton">
-            </button>
+            <ul>
+              <li class="degree" id="temperatureToday">17°C</li>
+              <li class="insky" id="inTheSky">Sunny</li>
+              <li class="feelslike" id="tempFeelsLike">
+                Feels like 1 °C
+              </li>
+            </ul>
+          </div>
+       
+        <div class="col-5 cityblock">
+          <form id="changeInfoCity">
+            <input
+              type="text"
+              placeholder="Type your sity here"
+              class="search-city"
+              id="searchInputValues"
+            />
+          </form>
+          <button id="hereButton"></button>
           <p class="choise-city">Cherkasy, Ukraine</p>
-          <p class="currentData"> Friday, 28/10/2022 17:23 </p>
+          <p class="currentData">Friday, 28/10/2022 17:23</p>
         </div>
       </div>
 
@@ -67,7 +67,7 @@
                 </div>
               </h5>
 
-              <p class="card-text"> 2°C </p>
+              <p class="card-text">2°C</p>
             </div>
             <img src="emoji/13.png" class="card-img-bottom" alt="..." />
           </div>
@@ -85,7 +85,7 @@
                 </div>
               </h5>
 
-              <p class="card-text"> 5°C </p>
+              <p class="card-text">5°C</p>
             </div>
             <img src="emoji/4.png" class="card-img-bottom" alt="..." />
           </div>
@@ -103,7 +103,7 @@
                 </div>
               </h5>
 
-              <p class="card-text"> 7°C </p>
+              <p class="card-text">7°C</p>
             </div>
             <img src="emoji/9.png" class="card-img-bottom" alt="..." />
           </div>
@@ -121,7 +121,7 @@
                 </div>
               </h5>
 
-              <p class="card-text"> 10°C </p>
+              <p class="card-text">10°C</p>
             </div>
             <img src="emoji/17.png" class="card-img-bottom" alt="..." />
           </div>
@@ -139,7 +139,7 @@
                 </div>
               </h5>
 
-              <p class="card-text"> 9°C </p>
+              <p class="card-text">9°C</p>
             </div>
             <img src="emoji/16.png" class="card-img-bottom" alt="..." />
           </div>
@@ -157,7 +157,7 @@
                 </div>
               </h5>
 
-              <p class="card-text"> 12°C </p>
+              <p class="card-text">12°C</p>
             </div>
             <img src="emoji/12.png" class="card-img-bottom" alt="..." />
           </div>
@@ -175,14 +175,22 @@
                 </div>
               </h5>
 
-              <p class="card-text"> 8°C </p>
+              <p class="card-text">8°C</p>
             </div>
             <img src="emoji/7.png" class="card-img-bottom" alt="..." />
           </div>
         </div>
+      </div>
     </div>
-  </div>
-  <script src="src/index.js"></script>
-  <footer><a href="https://github.com/MarynaHoriashchenko/WeatherApp" target="blank" > Open-source code </a> by Maryna Horiashchenko </footer>
-</body>
+    <script src="src/index.js"></script>
+    <footer>
+      <a
+        href="https://github.com/MarynaHoriashchenko/WeatherApp"
+        target="blank"
+      >
+        Open-source code
+      </a>
+      by Maryna Horiashchenko
+    </footer>
+  </body>
 </html>
