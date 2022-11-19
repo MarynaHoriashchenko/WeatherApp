@@ -25,6 +25,7 @@ function formatDate(timestamp) {
 }
 
 function displayTemperature(response) {
+  console.log(response.data.weather[0].icon);
   let currentTemperature = document.querySelector("#temperatureToday");
   let city = document.querySelector(".choise-city");
   let country = response.data.sys.country;
@@ -32,16 +33,22 @@ function displayTemperature(response) {
   let inSky = document.querySelector("#inTheSky");
   let tempFeelsLike = document.querySelector("#tempFeelsLike");
   let dateElement = document.querySelector("#currentData");
+  let iconElement = document.querySelector("#icon");
 
   currentTemperature.innerHTML = Math.round(response.data.main.temp);
   city.innerHTML = `${wholeCityName}, ${country}`;
   inSky.innerHTML = response.data.weather[0].main;
   tempFeelsLike.innerHTML = Math.round(response.data.main.feels_like);
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  iconElement.setAttribute(
+    "src",
+    `emoji/13n/${response.data.weather[0].icon}.png`
+  );
 }
 
+let city = "Praha";
 let units = "metric";
 let apiKey = "64af9709de23cc99a048e62319ab19b7";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Cherkasy&appid=${apiKey}&units=${units}`;
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
 
 axios.get(apiUrl).then(displayTemperature);
