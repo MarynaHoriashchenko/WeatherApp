@@ -40,10 +40,10 @@ function displayTemperature(response) {
   inSky.innerHTML = response.data.weather[0].main;
   tempFeelsLike.innerHTML = Math.round(response.data.main.feels_like);
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
-  iconElement.setAttribute(`emoji/${response.data.weather[0].icon}.png`);
+  iconElement.setAttribute("src", `emoji/${response.data.weather[0].icon}.png`);
 }
 
-let city = "London";
+let city = "Talin";
 let units = "metric";
 let apiKey = "64af9709de23cc99a048e62319ab19b7";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
