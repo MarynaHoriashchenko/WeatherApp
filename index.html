@@ -22,21 +22,22 @@
     <div class="container">
       <div class="container wholepage">
         <div class="row allApp">
-          <div class="col-6">
+          <div class="col-7">
+            <div class="weather-block">
             <img src=" " alt="" class="sun_emoji" id="icon"/>
-<!--             
-            <span class="units">
-              <a href="#" id="celsius-link">°C</a> |
-              <a href="#" id="fahrenheit-link">°F</a>
-            </span> --> 
             <ul>
-              <li class="degree" id="temperatureToday"></li>
+              <li> <span class="degree" id="temperatureToday"> 12 </span> 
+                  <span class="units">
+                     <a href="#" id="celsiusUnits" class="active">°C </a> |
+                      <a href="#" id="fahrenheitUnits">°F</a></span>
+             </li>
               <li class="insky" id="inTheSky"></li>
               <li class="feelslike" >Feels like <span id="tempFeelsLike"></span> °C</li>
             </ul>
+            </div>
           </div>
        
-        <div class="col-5 cityblock">
+        <div class="col-4 cityblock">
           <form id="changeInfoCity">
             <input
               type="search"
@@ -46,7 +47,6 @@
               autocomplete="off"
             />
           </form>
-          <button id="hereButton"></button>
           <p class="choise-city"></p>
           <p id="currentData" class="time"> </p>
         </div>
@@ -183,7 +183,7 @@
     </div>
     <script src="src/index.js"></script>
     <footer>
-      <a
+      <a class="footer-link"style="color: #64e3fd; font-weight: bold"
         href="https://github.com/MarynaHoriashchenko/WeatherApp"
         target="blank"
       >

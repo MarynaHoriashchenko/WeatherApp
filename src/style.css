@@ -27,14 +27,33 @@ ul {
   list-style-type: none;
 }
 
-.degree {
-  font-size: 80px;
-  font-weight: 700;
-}
 .units {
   position: relative;
   top: -42px;
-  padding-left: 10px;
+  padding-left: 5px;
+  font-size: 20px;
+}
+
+.weather-block .active {
+  color: white;
+  text-decoration: none;
+  cursor: default;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #64e3fd;
+}
+
+.degree {
+  font-size: 80px;
+  font-weight: 700;
 }
 
 .insky {
@@ -104,45 +123,10 @@ ul {
   padding-right: 0;
 }
 
-button {
-  background-image: url("https://i.pinimg.com/564x/9d/ec/f9/9decf96b4e45cbac0f7de16222e968f8.jpg");
-  background-size: 40px;
-  width: 40px;
-  height: 40px;
-  font-size: 2rem;
-  border-radius: 40px;
-  position: relative;
-  right: 50px;
-  top: -60px;
-}
-
-button:hover {
-  cursor: auto;
-}
 footer {
   font-size: small;
-  /* text-align: center; */
-  /* margin-left: 18px; */
 }
 
-a {
-  color: #000000;
-  background-color: transparent;
+.footer-link {
+  color: black; !important
 }
-
-a:hover {
-  color: #000000;
-  text-decoration: underline;
-}
-
-/* a {
-  color: #ffffff;
-  text-decoration: none;
-  background-color: transparent;
-}
-
-a:hover {
-  color: #ffffff;
-  font-weight: bold;
-  text-decoration: underline; */
-/* } */
