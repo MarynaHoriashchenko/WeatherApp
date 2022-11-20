@@ -1,20 +1,15 @@
+.container {
+  max-width: 800px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
 .wholepage {
   border: 1px black solid;
-  max-width: 900px;
   background-color: black;
   color: white;
   font-family: "Josefin Slab", serif;
-}
-.container {
-  max-width: 900px;
-}
-
-.allApp {
-  padding-top: 20px;
-}
-
-.WTblock {
-  margin-bottom: 0;
 }
 
 .sun_emoji {
@@ -80,53 +75,42 @@ a:hover {
   padding-bottom: 5px;
 }
 
-.choise-city,
-.time {
+.choise-city {
   text-align: center;
   font-size: 25px;
   font-weight: bolder;
 }
 
-.card {
-  background-color: black;
+.time {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.weather-forecast {
+  text-align: center;
 }
 
 .dot {
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
   background-color: black;
   border-radius: 50%;
   border-style: solid;
   display: inline-block;
 }
 
-.dot2 {
-  height: 80px;
-  width: 80px;
-  background-color: black;
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 5px;
-  display: inline-block;
-  font-weight: 900;
+.weather-forecast-date {
+  font-size: 18px;
+  padding: 5px 10px 5px 10px;
 }
 
-.card-text {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 35px;
+.weather-forecast-temperature {
+  font-size: 30px;
   font-weight: bold;
+  margin-top: 15px;
 }
 
-.week {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-footer {
+.footer {
   font-size: small;
-}
-
-.footer-link {
-  color: black; !important
 }
