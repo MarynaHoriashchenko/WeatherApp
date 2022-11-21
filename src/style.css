@@ -89,6 +89,7 @@ a:hover {
 
 .weather-forecast {
   text-align: center;
+  margin-top: 10px;
 }
 
 .dot {
@@ -111,6 +112,6 @@ a:hover {
   margin-top: 15px;
 }
 
-.footer {
+footer {
   font-size: small;
 }
