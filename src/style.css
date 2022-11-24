@@ -1,5 +1,5 @@
 .container {
-  max-width: 800px;
+  max-width: 650px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 10px;
@@ -10,6 +10,11 @@
   background-color: black;
   color: white;
   font-family: "Josefin Slab", serif;
+}
+
+.allApp {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .sun_emoji {
@@ -29,23 +34,6 @@ ul {
   font-size: 20px;
 }
 
-.weather-block .active {
-  color: white;
-  text-decoration: none;
-  cursor: default;
-  font-weight: bolder;
-  font-size: 25px;
-}
-
-a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
-
-a:hover {
-  color: #64e3fd;
-}
-
 .degree {
   font-size: 80px;
   font-weight: 700;
@@ -58,13 +46,12 @@ a:hover {
 }
 
 .feelslike {
-  font-size: small;
+  font-size: 15px;
 }
 
 .cityblock {
-  margin-left: 40px;
+  margin-left: 10px;
 }
-
 .search-city {
   border-radius: 50px;
   text-align: center;
@@ -84,7 +71,6 @@ a:hover {
 .time {
   text-align: center;
   font-size: 15px;
-  font-weight: bolder;
 }
 
 .weather-forecast {

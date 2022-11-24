@@ -25,7 +25,7 @@ function formatDate(timestamp) {
 }
 
 function formatForecastDay(timestamp) {
-  let date = new Date(timestamp);
+  let date = new Date(timestamp * 1000);
   let number = date.getDate();
   let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   let day = days[date.getDay()];
@@ -113,36 +113,7 @@ function handleSubmit(event) {
   search(searchInput.value);
 }
 
-function displayFahrenheitTemperature(event) {
-  event.preventDefault();
-  let currentTemperature = document.querySelector("#temperatureToday");
-
-  celsiuslink.classList.remove("active");
-  fahrenheitlink.classList.add("active");
-
-  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  currentTemperature.innerHTML = Math.round(fahrenheitTemperature);
-}
-
-function displayCelsiusTemperature(event) {
-  event.preventDefault();
-
-  celsiuslink.classList.add("active");
-  fahrenheitlink.classList.remove("active");
-
-  let currentTemperature = document.querySelector("#temperatureToday");
-  currentTemperature.innerHTML = Math.round(celsiusTemperature);
-}
-
-let celsiusTemperature = null;
-
 let form = document.querySelector("#changeInfoCity");
 form.addEventListener("submit", handleSubmit);
-
-let fahrenheitlink = document.querySelector("#fahrenheitUnits");
-fahrenheitlink.addEventListener("click", displayFahrenheitTemperature);
-
-let celsiuslink = document.querySelector("#celsiusUnits");
-celsiuslink.addEventListener("click", displayCelsiusTemperature);
 
 search("London");
