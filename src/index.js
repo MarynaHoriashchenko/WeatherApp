@@ -50,7 +50,6 @@ function displayForecast(response) {
           <div id="weatherForecastDayOfWeek">${formatForecastDay(
             forecastDay.dt
           )}</div>
-          <div id="weatherForecastDay"></div>
         </div>
       </div>
         <div class="weather-forecast-temperature">${Math.round(
